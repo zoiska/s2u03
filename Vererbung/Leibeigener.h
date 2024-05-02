@@ -10,6 +10,7 @@
 class Leibeigener : public Einwohner {
 public:
     explicit Leibeigener(int einkommen);
+    int steuer() override;
 };
 
 #endif //$LEIBEIGENER_H

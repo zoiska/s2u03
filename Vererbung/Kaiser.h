@@ -10,6 +10,7 @@
 class Kaiser : public Einwohner {
 public:
     explicit Kaiser(int einkommen);
+    int steuer() override;
 };
 
 #endif //$KAISER_H

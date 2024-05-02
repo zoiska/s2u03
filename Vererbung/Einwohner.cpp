@@ -9,6 +9,10 @@ Einwohner::Einwohner(int einkommen) {
 }
 
 int Einwohner::zuVersteuerndesEinkommen() {
+    return this->einkommen;
+}
+
+int Einwohner::steuer() {
     int temp = this->einkommen;
     temp = temp * 0.1;
     if(temp < 1) {
@@ -17,8 +21,4 @@ int Einwohner::zuVersteuerndesEinkommen() {
     else {
         return temp;
     }
-}
-
-int Einwohner::steuer() {
-    return 0;
 }

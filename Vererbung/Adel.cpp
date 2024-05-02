@@ -8,6 +8,13 @@ Adel::Adel(int einkommen) : Einwohner(einkommen) {
     this->einkommen = einkommen;
 }
 
-int Adel::zuVersteuerndesEinkommen() {
-    return 0;
+int Adel::steuer() {
+    int temp = this->einkommen;
+    temp = temp * 0.2;
+    if(temp < 1) {
+        return 1;
+    }
+    else {
+        return temp;
+    }
 }

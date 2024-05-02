@@ -7,3 +7,7 @@
 Kaiser::Kaiser(int einkommen) : Einwohner(einkommen) {
     this->einkommen = einkommen;
 }
+
+int Kaiser::steuer() {
+    return 0;
+}
