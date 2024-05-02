@@ -10,7 +10,7 @@
 class Adel : public Einwohner {
 public:
     explicit Adel(int einkommen);
-    int zuVerstuerndesEinkommen();
+    int zuVersteuerndesEinkommen() override;
 };
 
 #endif //$ADEL_H

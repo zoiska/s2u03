@@ -8,6 +8,6 @@ Adel::Adel(int einkommen) : Einwohner(einkommen) {
     this->einkommen = einkommen;
 }
 
-int Adel::zuVerstuerndesEinkommen() {
+int Adel::zuVersteuerndesEinkommen() {
     return 0;
 }
