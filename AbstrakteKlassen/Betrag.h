@@ -6,6 +6,7 @@
 #define BETRAG_H
 
 #include "Funktion.h"
+#include <cmath>
 
 class Betrag : public Funktion {
 public:

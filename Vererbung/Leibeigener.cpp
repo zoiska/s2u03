@@ -4,22 +4,18 @@
 
 #include "Leibeigener.h"
 
-Leibeigener::Leibeigener(int einkommen) : Einwohner(einkommen) {
-    this->einkommen = einkommen;
-}
+Leibeigener::Leibeigener(int einkommen) : Bauer(einkommen) {}
 
 int Leibeigener::steuer() {
-    if(this->einkommen < 12) {
-        return 0;
+    int temp = this->einkommen;
+    if(temp < 12) {
+        temp = 0;
     }
     else {
-        int temp = this->einkommen;
         temp = temp * 0.1;
         if(temp < 1) {
-            return 1;
-        }
-        else {
-            return temp;
+            temp = 1;
         }
     }
+    return temp;
 }

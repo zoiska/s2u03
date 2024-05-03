@@ -9,12 +9,7 @@ Betrag::Betrag(int f) {
 }
 
 double Betrag::at(double x) {
-    if(x < 0) {
-        return x * -1;
-    }
-    else {
-        return x;
-    }
+    return abs(x);
 }
 
 bool Betrag::valid(double x) {

@@ -4,17 +4,13 @@
 
 #include "Adel.h"
 
-Adel::Adel(int einkommen) : Einwohner(einkommen) {
-    this->einkommen = einkommen;
-}
+Adel::Adel(int einkommen) : Einwohner(einkommen) {}
 
 int Adel::steuer() {
     int temp = this->einkommen;
     temp = temp * 0.2;
     if(temp < 1) {
-        return 1;
+        temp = 1;
     }
-    else {
-        return temp;
-    }
+    return temp;
 }

@@ -9,7 +9,7 @@ Quadrat::Quadrat(int f) {
 }
 
 double Quadrat::at(double x) {
-    return x * x;
+    return pow(x, 2);
 }
 
 bool Quadrat::valid(double x) {

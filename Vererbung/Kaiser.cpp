@@ -4,9 +4,7 @@
 
 #include "Kaiser.h"
 
-Kaiser::Kaiser(int einkommen) : Einwohner(einkommen) {
-    this->einkommen = einkommen;
-}
+Kaiser::Kaiser(int einkommen) : Einwohner(einkommen) {}
 
 int Kaiser::steuer() {
     return 0;

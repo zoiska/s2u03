@@ -17,6 +17,10 @@ void Funktion::werteTafel(Funktion *f, double von, double bis, double schritt) {
 
 double Funktion::minWert(Funktion *f, double von, double bis, double schritt) {
     double min;
+    while(!f->valid(von)) {
+        von += schritt;
+    }
+    min = f->at(von);
     std::cout << "Kleinster Wert im Argumentbereich der Funktion: " << f->toString() << "\n=========================\n";
     for(double x = von; x <= bis + 1e-9; x += schritt) {
         if(f->valid(x) && f->at(x) < min) {

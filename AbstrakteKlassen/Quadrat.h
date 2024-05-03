@@ -6,6 +6,7 @@
 #define QUADRAT_H
 
 #include "Funktion.h"
+#include <cmath>
 
 class Quadrat : public Funktion {
 public:

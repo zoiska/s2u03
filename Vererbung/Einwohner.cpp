@@ -16,9 +16,7 @@ int Einwohner::steuer() {
     int temp = this->einkommen;
     temp = temp * 0.1;
     if(temp < 1) {
-        return 1;
+        temp = 1;
     }
-    else {
-        return temp;
-    }
+    return temp;
 }

@@ -7,7 +7,7 @@
 
 #include "Bauer.h"
 
-class Leibeigener : public Einwohner {
+class Leibeigener : public Bauer {
 public:
     explicit Leibeigener(int einkommen);
     int steuer() override;

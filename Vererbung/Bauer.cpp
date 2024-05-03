@@ -4,6 +4,4 @@
 
 #include "Bauer.h"
 
-Bauer::Bauer(int einkommen) : Einwohner(einkommen) {
-    this->einkommen = einkommen;
-}
+Bauer::Bauer(int einkommen) : Einwohner(einkommen) {}
